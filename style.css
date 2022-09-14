@@ -1,0 +1,53 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    height: inherit;
+    align-items: center;
+}
+.container{
+    background-color: blanchedalmond;
+    height:60vh;
+    width: 25%;
+    border: 1px solid blue;
+    display: flex;
+    flex-direction: column;
+}
+.container .row,.row-0{
+    border: 1px solid #000;
+    height: inherit;
+}
+.row div:last-child{
+    background-color:brown;
+}
+.input-box{
+    background-color: #000;
+}
+
+.container .row{
+    display: flex;
+}
+.row div{
+    border: 1px solid red;    
+    width: 100%;
+}
+.row-1 .col-1{
+    flex:2;
+}
+.row-1 .col-2{
+    flex:1;
+}
+.row-1 .col-3{
+    flex:1;
+}
+.row-5 .col-1{
+    flex:3;
+}
+.row-5 .col-2{
+    flex: 1;
+}
