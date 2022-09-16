@@ -1,39 +1,45 @@
+/* #D8D9DB -- number color */
+/* #DF974C -- operators color */
+/*  rgb(30, 14, 14); */
 body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    height: 100vh;
+    min-height: 100vh;
+    background-color: rgb(53, 33, 33);
 }
 .wrapper{
     display: flex;
     justify-content: center;
-    height: inherit;
+    height: 80vh;
     align-items: center;
 }
+
 .container{
-    background-color: blanchedalmond;
+    background-color: #D8D9DB;
     height:60vh;
-    width: 25%;
-    border: 1px solid blue;
+    width: 22%;
+    border: 2px solid black;
     display: flex;
     flex-direction: column;
 }
 .container .row,.row-0{
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     height: inherit;
 }
 .row div:last-child{
-    background-color:brown;
+    background-color:#DF974C;
 }
 .input-box{
     background-color: #000;
+    color: white;
 }
 
 .container .row{
     display: flex;
 }
 .row div{
-    border: 1px solid red;    
+    border: 1px solid black;    
     width: 100%;
 }
 .row-1 .col-1{
@@ -50,4 +56,26 @@ body{
 }
 .row-5 .col-2{
     flex: 1;
+}
+.col-1,.col-2,.col-3,.col-4 {
+    text-align: center;
+    padding: 20px 0px;
+    font-size:2.5rem;
+    font-weight: bold;
+}
+/* .col-1:hover,.col-2:hover,.col-3:hover{
+    background-color: rgb(175, 154, 154);
+}
+.col-4:hover{
+    background-color: black;
+} */
+
+.row div:hover{
+    background-color: rgb(175, 154, 154);
+}
+
+.input-box h2{
+    padding: 0;
+    text-align: right;
+    font-size: 2rem;
 }
