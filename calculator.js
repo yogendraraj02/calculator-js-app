@@ -65,15 +65,8 @@ function checkInput(input){
         
     } 
     else{
-        //it means you are set with fnum , op and snum and user give another number input;
-        if(fNum !="" && op !="" && sNum !=""){
-           freshStart(); 
-            fNum += input;
-            screen.innerText = fNum;
-        }
-
-        // it means when you are set with fnum and operator
-        else if(op != ""){
+                // it means when you are set with fnum and operator
+        if(op != ""){
             sNum += input;
             screen.innerText = sNum;
         }
